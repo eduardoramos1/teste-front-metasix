@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 
+import NavBar from "./components/layout/Navbar";
+import Questions from "./components/questions/Questions";
+
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
 import "./App.css";
@@ -14,7 +17,12 @@ function App() {
 
 	return (
 		<FAQState>
-			<div className="App">INICIO testesteste</div>
+			<div className="App">
+				<NavBar />
+				<div className="container">
+					<Questions />
+				</div>
+			</div>
 		</FAQState>
 	);
 }
