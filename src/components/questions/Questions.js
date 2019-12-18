@@ -4,14 +4,12 @@ import QuestionContext from "./../../context/FAQ/FAQContext";
 const Questions = () => {
 	const questionContext = useContext(QuestionContext);
 
-	const { getQuestions, questions } = questionContext;
+	const { getQuestions } = questionContext;
 
 	useEffect(() => {
 		getQuestions();
 		// eslint-disable-next-line
 	}, []);
-
-	console.log(questions);
 
 	return <div></div>;
 };

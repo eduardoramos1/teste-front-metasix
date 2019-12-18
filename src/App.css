@@ -12,16 +12,23 @@
 	padding: 0;
 }
 
-.App {
+body,
+html {
 	font-family: "Roboto", sans-serif;
+	min-height: 100vh;
+	background: #fafafa;
 }
 
-/* NavBar */
+/* Header */
+header {
+	margin: 5px;
+}
 nav {
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	color: white;
 }
 
 .logo {
@@ -46,7 +53,7 @@ nav {
 }
 
 .navbar-item:hover {
-	color: black;
+	color: var(--custom-black);
 }
 
 .navbar-item-text {
@@ -58,9 +65,41 @@ nav {
 	margin-bottom: -20px;
 }
 
+/* Navigation Buttons */
+
+.custom-button-group {
+	margin-top: 60px;
+	font-size: 0.8rem;
+}
+
+.custom-btn {
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 10px 20px;
+	color: var(--custom-gray);
+
+	border-radius: 10px;
+	margin-right: 15px;
+}
 /* Cores */
 .custom-bg-blue {
 	background-color: var(--custom-blue);
+}
+
+.active {
+	background-color: var(--custom-blue);
+	color: white;
+}
+
+/* Outros */
+
+.custom-container {
+	width: 95%;
+	margin: auto;
+}
+
+.shadow {
+	box-shadow: 1px 1px 5px var(--custom-gray);
 }
 
 /* mobile */

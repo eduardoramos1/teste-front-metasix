@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./images/logo.png";
 
-const Navbar = () => {
+const Header = () => {
 	return (
 		<React.Fragment>
 			<header>
@@ -23,4 +23,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default Header;

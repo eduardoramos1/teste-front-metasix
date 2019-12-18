@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 
-import NavBar from "./components/layout/Navbar";
+import Header from "./components/layout/Header";
 import Questions from "./components/questions/Questions";
+import NavigationButtons from "./components/layout/NavigationButtons";
 
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
@@ -18,8 +19,9 @@ function App() {
 	return (
 		<FAQState>
 			<div className="App">
-				<NavBar />
-				<div className="container">
+				<Header />
+				<div className="custom-container">
+					<NavigationButtons />
 					<Questions />
 				</div>
 			</div>
