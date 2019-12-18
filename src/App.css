@@ -10,6 +10,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body,
@@ -20,14 +21,9 @@ html {
 }
 
 /* Header */
-header {
-	margin: 5px;
-}
+
 nav {
 	height: 80px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	color: white;
 }
 
@@ -68,7 +64,6 @@ nav {
 /* Navigation Buttons */
 
 .custom-button-group {
-	margin-top: 60px;
 	font-size: 0.8rem;
 }
 
@@ -84,11 +79,54 @@ nav {
 /* Cores */
 .custom-bg-blue {
 	background-color: var(--custom-blue);
+	color: white;
 }
 
-.active {
-	background-color: var(--custom-blue);
-	color: white;
+/* Questions */
+.FAQ-title {
+	font-size: 1.9rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+/* form */
+.custom-input {
+	width: 250px;
+	border: 1px solid #d3d3d3;
+	color: var(--custom-black);
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+
+.custom-input::placeholder {
+	color: var(--custom-gray);
+	font-weight: 600;
+}
+
+.btn-search {
+	padding: 5px 10px;
+	border: 1px solid var(--custom-blue);
+	border-radius: 10px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.btn-search:hover {
+	opacity: 0.8;
+}
+
+.btn-search:active {
+	opacity: 0.5;
+}
+
+.btn-search:focus {
+	background: var(--custom-blue);
+}
+
+.btn-text {
+	margin-left: 5px;
 }
 
 /* Outros */
@@ -102,9 +140,35 @@ nav {
 	box-shadow: 1px 1px 5px var(--custom-gray);
 }
 
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mt-3 {
+	margin-top: 60px;
+}
+
+.mt-2 {
+	margin-top: 40px;
+}
+
+.mt-1 {
+	margin-top: 20px;
+}
+
 /* mobile */
 
+@media (max-width: 750px) {
+	.title-and-search-bar {
+		flex-direction: column;
+		height: 80px;
+	}
+}
+
 @media (max-width: 600px) {
+	/* Header */
 	nav {
 		height: 150px;
 		flex-direction: column;
@@ -117,5 +181,31 @@ nav {
 	.icon {
 		margin-right: 10px;
 		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	/* Navigation Buttons */
+
+	.custom-btn {
+		display: block;
+		margin: 10px 30px;
+	}
+
+	/* outros */
+	.custom-container {
+		width: 100%;
+	}
+
+	.FAQ-title {
+		font-size: 1.5rem;
+	}
+
+	.custom-input {
+		width: 150px;
+	}
+
+	.btn-search {
+		font-size: 0.8rem;
 	}
 }

@@ -14,10 +14,12 @@ const NavigationButtons = () => {
 	};
 
 	return (
-		<div className="custom-button-group">
+		<div className="custom-button-group mt-3">
 			<a
 				href="#!"
-				className={homeActive ? "active custom-btn" : "custom-btn shadow"}
+				className={
+					homeActive ? "custom-bg-blue custom-btn" : "custom-btn shadow"
+				}
 				onClick={() => {
 					clearActive();
 					setHomeActive(true);
@@ -27,7 +29,9 @@ const NavigationButtons = () => {
 			</a>
 			<a
 				href="#!"
-				className={FAQActive ? "active custom-btn" : "custom-btn shadow"}
+				className={
+					FAQActive ? "custom-bg-blue custom-btn" : "custom-btn shadow"
+				}
 				onClick={() => {
 					clearActive();
 					setFAQActive(true);
@@ -37,7 +41,9 @@ const NavigationButtons = () => {
 			</a>
 			<a
 				href="#!"
-				className={localActive ? "active custom-btn" : "custom-btn shadow"}
+				className={
+					localActive ? "custom-bg-blue custom-btn" : "custom-btn shadow"
+				}
 				onClick={() => {
 					clearActive();
 					setLocalActive(true);
@@ -47,7 +53,9 @@ const NavigationButtons = () => {
 			</a>
 			<a
 				href="#!"
-				className={categoryActive ? "active custom-btn" : "custom-btn shadow"}
+				className={
+					categoryActive ? "custom-bg-blue custom-btn" : "custom-btn shadow"
+				}
 				onClick={() => {
 					clearActive();
 					setCategoryActive(true);

@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<React.Fragment>
 			<header>
-				<nav className="custom-bg-blue">
+				<nav className="custom-bg-blue flex-between">
 					<img src={logo} alt="logo" className="logo" />
 					<div className="navbar-item-group">
 						<a href="#!" className="navbar-item">
