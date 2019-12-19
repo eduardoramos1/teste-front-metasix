@@ -3,18 +3,18 @@ import React from "react";
 const QuestionsHeader = () => {
 	return (
 		<React.Fragment>
-			<div className="row mt-2 custom-bg-blue table-header valign-wrapper">
-				<div className="col s7 ">Pergunta</div>
-				<div className="col s2 right-align">
+			<div className="row mt-2 custom-bg-blue table-header valign-wrapper ">
+				<div className="col s2 m7 ">Pergunta</div>
+				<a href="#!" className="col s4 m2 right-align">
 					<i className="fas fa-plus-circle"></i> Nova Pergunta
-				</div>
-				<div className="col s1 border-left valign-wrapper table-head-data">
+				</a>
+				<div className="col s2 border-left valign-wrapper justify-center hide-on-small-only">
 					Ordem
 				</div>
-				<div className="col s1 border-left valign-wrapper table-head-data">
+				<div className="col s2 border-left valign-wrapper justify-center">
 					Editar
 				</div>
-				<div className="col s1 border-left valign-wrapper table-head-data">
+				<div className="col s2 border-left valign-wrapper justify-center">
 					Excluir
 				</div>
 			</div>

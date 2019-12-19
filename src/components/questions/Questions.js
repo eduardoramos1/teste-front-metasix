@@ -16,9 +16,9 @@ const Questions = () => {
 	console.log(questions);
 
 	if (questions.length) {
-		return questions.map(q => (
+		return questions.map((q, i) => (
 			<React.Fragment key={q.objectId}>
-				<QuestionItem q={q} />
+				<QuestionItem q={q} i={i} />
 			</React.Fragment>
 		));
 	} else {

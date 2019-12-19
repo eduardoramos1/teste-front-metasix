@@ -82,6 +82,14 @@ nav {
 	color: white;
 }
 
+.custom-blue {
+	color: var(--custom-blue);
+}
+
+.custom-red {
+	color: var(--custom-red);
+}
+
 /* Title */
 .FAQ-title {
 	font-size: 1.9rem;
@@ -140,8 +148,12 @@ nav {
 	height: 35px;
 }
 
-.table-head-data {
-	justify-content: center;
+.collapsible i {
+	margin-right: 0;
+}
+
+.custom-bg-blue a {
+	color: white;
 }
 
 /* Outros */
@@ -159,6 +171,10 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
 }
 
 .mt-3 {
@@ -207,10 +223,7 @@ nav {
 		margin: 10px 30px;
 	}
 
-	/* outros */
-	.custom-container {
-		width: 100%;
-	}
+	/* form e title */
 
 	.FAQ-title {
 		font-size: 1.5rem;
@@ -221,6 +234,11 @@ nav {
 	}
 
 	.btn-search {
+		font-size: 0.8rem;
+	}
+
+	/* questions */
+	.mobile-font {
 		font-size: 0.8rem;
 	}
 }
