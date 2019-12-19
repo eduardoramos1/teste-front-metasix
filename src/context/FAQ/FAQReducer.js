@@ -5,7 +5,7 @@ export default (state, action) => {
 		case GET_QUESTIONS:
 			return {
 				...state,
-				questions: action.payload
+				questions: action.payload.results
 			};
 		default:
 			return state;

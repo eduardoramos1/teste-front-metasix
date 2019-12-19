@@ -6,8 +6,7 @@ const SearchBar = () => {
 			<input
 				type="text"
 				className="browser-default custom-input"
-				name=""
-				id=""
+				name="text"
 				placeholder="Busque por termo..."
 			/>
 			<button className=" btn-search custom-bg-blue">

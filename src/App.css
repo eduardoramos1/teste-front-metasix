@@ -82,7 +82,7 @@ nav {
 	color: white;
 }
 
-/* Questions */
+/* Title */
 .FAQ-title {
 	font-size: 1.9rem;
 	font-weight: 600;
@@ -127,6 +127,21 @@ nav {
 
 .btn-text {
 	margin-left: 5px;
+}
+
+/* Questions */
+.table-header {
+	/* padding: 5px; */
+	border-radius: 10px;
+}
+
+.border-left {
+	border-left: 1px solid #77aed7;
+	height: 35px;
+}
+
+.table-head-data {
+	justify-content: center;
 }
 
 /* Outros */

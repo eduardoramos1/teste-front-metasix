@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import Header from "./components/layout/Header";
+import QuestionHeader from "./components/questions/QuestionsHeader";
 import Questions from "./components/questions/Questions";
 import NavigationButtons from "./components/layout/NavigationButtons";
 import FAQTitle from "./components/layout/FAQTitle";
@@ -32,6 +33,7 @@ function App() {
 							<SearchBar />
 						</div>
 					</div>
+					<QuestionHeader />
 					<Questions />
 				</div>
 			</div>
