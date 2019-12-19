@@ -90,6 +90,11 @@ nav {
 	color: var(--custom-red);
 }
 
+.custom-bg-red {
+	background-color: var(--custom-red);
+	color: white;
+}
+
 /* Title */
 .FAQ-title {
 	font-size: 1.9rem;

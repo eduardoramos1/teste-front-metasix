@@ -1,1 +1,4 @@
 export const GET_QUESTIONS = "GET_QUESTIONS";
+export const ADD_QUESTION = "ADD_QUESTION";
+export const FILTER_QUESTIONS = "FILTER_QUESTIONS";
+export const CLEAR_FILTER = "CLEAR_FILTER";

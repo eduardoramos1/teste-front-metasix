@@ -1,12 +1,12 @@
 import React, { useEffect, useContext } from "react";
-import QuestionContext from "./../../context/FAQ/FAQContext";
+import FAQContext from "./../../context/FAQ/FAQContext";
 
 import QuestionItem from "./QuestionItem";
 
 const Questions = () => {
-	const questionContext = useContext(QuestionContext);
+	const faqContext = useContext(FAQContext);
 
-	const { getQuestions, questions } = questionContext;
+	const { getQuestions, questions, filtered } = faqContext;
 
 	useEffect(() => {
 		getQuestions();
@@ -15,7 +15,16 @@ const Questions = () => {
 
 	console.log(questions);
 
-	if (questions.length) {
+	if (filtered !== null) {
+		if (!filtered.length) {
+			return " Não foi encontrado resultados na sua pesquisa";
+		}
+		return filtered.map((q, i) => (
+			<React.Fragment key={q.objectId}>
+				<QuestionItem q={q} i={i} />
+			</React.Fragment>
+		));
+	} else if (questions.length) {
 		return questions.map((q, i) => (
 			<React.Fragment key={q.objectId}>
 				<QuestionItem q={q} i={i} />

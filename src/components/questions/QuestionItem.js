@@ -22,7 +22,7 @@ const QuestionItem = ({ q, i }) => {
 						</a>
 					</span>
 					<span className="col s2 center-align justify-center">
-						<i class="fas fa-trash-alt custom-red"></i>
+						<i className="fas fa-trash-alt custom-red"></i>
 					</span>
 				</div>
 				<div className="collapsible-body">

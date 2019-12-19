@@ -2,7 +2,12 @@ import React, { useReducer } from "react";
 import FAQContext from "./FAQContext";
 import FAQReducer from "./FAQReducer";
 
-import { GET_QUESTIONS } from "./../Types";
+import {
+	GET_QUESTIONS,
+	ADD_QUESTION,
+	FILTER_QUESTIONS,
+	CLEAR_FILTER
+} from "./../Types";
 
 const FAQState = props => {
 	const initialState = {
@@ -37,9 +42,27 @@ const FAQState = props => {
 		}
 	};
 
+	// add pergunta
+	const addQuestion = question => {
+		dispatch({
+			type: ADD_QUESTION,
+			payload: question
+		});
+	};
+
 	// atualizar pergunta
 
 	// remover pergunta
+
+	// filtrar perguntas
+	const filterQuestions = text => {
+		dispatch({ type: FILTER_QUESTIONS, payload: text });
+	};
+
+	// limpar filtros
+	const clearFilter = () => {
+		dispatch({ type: CLEAR_FILTER });
+	};
 
 	return (
 		<FAQContext.Provider
@@ -48,7 +71,10 @@ const FAQState = props => {
 				currentQuestion: state.currentQuestion,
 				filtered: state.filtered,
 				error: state.error,
-				getQuestions
+				getQuestions,
+				addQuestion,
+				filterQuestions,
+				clearFilter
 			}}
 		>
 			{props.children}
