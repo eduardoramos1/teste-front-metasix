@@ -30,9 +30,9 @@ const QuestionItem = ({ q, i }) => {
 						{i + 1}{" "}
 					</span>
 					<span
-						className="col s2 center-align modal-trigger"
+						className="col s2 center-align "
 						href="#updateQuestion"
-						onClick={() =>
+						onClick={ev =>
 							setCurrentQuestion({
 								objectId: q.objectId,
 								question: q.question,
@@ -40,15 +40,12 @@ const QuestionItem = ({ q, i }) => {
 							})
 						}
 					>
-						<a href="#!">
-							<i className="fas fa-edit custom-blue"></i>
+						<a href="#updateQuestion" className="modal-trigger ">
+							<i className="fas fa-edit custom-blue "></i>
 						</a>
 					</span>
-					<span
-						className="col s2 center-align justify-center"
-						onClick={onDelete}
-					>
-						<i className="fas fa-trash-alt custom-red"></i>
+					<span className="col s2 center-align justify-center ">
+						<i className="fas fa-trash-alt custom-red" onClick={onDelete}></i>
 					</span>
 				</div>
 				<div className="collapsible-body">

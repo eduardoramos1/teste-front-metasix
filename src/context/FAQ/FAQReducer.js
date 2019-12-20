@@ -24,7 +24,11 @@ export default (state, action) => {
 		case DELETE_QUESTION:
 			return {
 				...state,
-				questions: state.questions.filter(q => q.objectId !== action.payload)
+				questions: state.questions.filter(q => q.objectId !== action.payload),
+				filtered:
+					state.filtered !== null
+						? state.filtered.filter(q => q.objectId !== action.payload)
+						: null
 			};
 		case SET_CURRENT:
 			return {
@@ -38,6 +42,12 @@ export default (state, action) => {
 				questions: state.questions.map(q =>
 					q.objectId === action.payload.objectId ? action.payload : q
 				),
+				filtered:
+					state.filtered !== null
+						? state.filtered.map(q =>
+								q.objectId === action.payload.objectId ? action.payload : q
+						  )
+						: null,
 				currentQuestion: {}
 			};
 		case FILTER_QUESTIONS:

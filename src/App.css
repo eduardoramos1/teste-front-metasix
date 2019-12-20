@@ -18,6 +18,7 @@ html {
 	font-family: "Roboto", sans-serif;
 	min-height: 100vh;
 	background: #fafafa;
+	overflow-x: hidden;
 }
 
 /* Header */

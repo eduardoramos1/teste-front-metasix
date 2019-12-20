@@ -13,8 +13,6 @@ const Questions = () => {
 		// eslint-disable-next-line
 	}, []);
 
-	console.log(questions);
-
 	if (filtered !== null) {
 		if (!filtered.length) {
 			return " Não foi encontrado resultados na sua pesquisa";

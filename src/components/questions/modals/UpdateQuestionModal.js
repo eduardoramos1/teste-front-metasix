@@ -41,7 +41,7 @@ const UpdateQuestionModal = () => {
 							type="text"
 							name="question"
 							id="question"
-							value={question}
+							value={question || ""}
 							onChange={ev => setQuestion(ev.target.value)}
 						/>
 					</div>

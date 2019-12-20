@@ -15,7 +15,7 @@ import {
 const FAQState = props => {
 	const initialState = {
 		questions: [],
-		currentQuestion: {},
+		currentQuestion: null,
 		filtered: null,
 		error: null
 	};
