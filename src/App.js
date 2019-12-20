@@ -7,6 +7,7 @@ import NavigationButtons from "./components/layout/NavigationButtons";
 import FAQTitle from "./components/layout/FAQTitle";
 import SearchBar from "./components/questions/SearchBar";
 import AddQuestionModal from "./components/questions/modals/AddQuestionModal";
+import UpdateQuestionModal from "./components/questions/modals/UpdateQuestionModal";
 
 import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css/dist/js/materialize.min.js";
@@ -27,6 +28,7 @@ function App() {
 				<div className="custom-container">
 					<NavigationButtons />
 					<AddQuestionModal />
+					<UpdateQuestionModal />
 					<div className="flex-between mt-2 title-and-search-bar">
 						<div className="">
 							<FAQTitle />

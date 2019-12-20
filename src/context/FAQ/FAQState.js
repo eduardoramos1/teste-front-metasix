@@ -6,13 +6,16 @@ import {
 	GET_QUESTIONS,
 	ADD_QUESTION,
 	FILTER_QUESTIONS,
-	CLEAR_FILTER
+	CLEAR_FILTER,
+	DELETE_QUESTION,
+	UPDATE_QUESTION,
+	SET_CURRENT
 } from "./../Types";
 
 const FAQState = props => {
 	const initialState = {
 		questions: [],
-		currentQuestion: null,
+		currentQuestion: {},
 		filtered: null,
 		error: null
 	};
@@ -51,8 +54,22 @@ const FAQState = props => {
 	};
 
 	// atualizar pergunta
+	const updateQuestion = question => {
+		dispatch({
+			type: UPDATE_QUESTION,
+			payload: question
+		});
+	};
+
+	// setar pergunta atual
+	const setCurrentQuestion = question => {
+		dispatch({ type: SET_CURRENT, payload: question });
+	};
 
 	// remover pergunta
+	const deleteQuestion = id => {
+		dispatch({ type: DELETE_QUESTION, payload: id });
+	};
 
 	// filtrar perguntas
 	const filterQuestions = text => {
@@ -74,7 +91,10 @@ const FAQState = props => {
 				getQuestions,
 				addQuestion,
 				filterQuestions,
-				clearFilter
+				clearFilter,
+				deleteQuestion,
+				setCurrentQuestion,
+				updateQuestion
 			}}
 		>
 			{props.children}

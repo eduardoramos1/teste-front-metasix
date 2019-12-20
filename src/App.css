@@ -161,6 +161,11 @@ nav {
 	color: white;
 }
 
+i.custom-red:hover,
+i.custom-blue:hover {
+	color: var(--custom-black);
+}
+
 /* Outros */
 
 .custom-container {
