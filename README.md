@@ -7,6 +7,8 @@ Minha versão do teste para front-end na Metasix
 - Clone ou faça o download do projeto;
 - No terminal acesse a pasta raiz do projeto e use :
   `npm install`
+- Para iniciar o projeto : 
+`npm start`
 
 ## Tecnologias utilizadas
 
